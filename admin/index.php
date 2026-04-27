@@ -1,5 +1,4 @@
-<?php
-require_once 'auth_admin.php'; require 'menu.php'?>
+<?php require_once 'auth_admin.php'; require 'menu.php'; ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -7,54 +6,48 @@ require_once 'auth_admin.php'; require 'menu.php'?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin - Academia Corpo em Foco</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="admin-body">
 
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Bem-vindo ao Painel Administrativo</h1>
-                <p class="lead">Selecione uma opção no menu para gerenciar o conteúdo da Academia Corpo em Foco.</p>
-                
-                <div class="row mt-4">
-                    <div class="col-md-3">
-                        <div class="card text-center">
-                            <div class="card-body">
-                                <h5 class="card-title">Avisos/Banners</h5>
-                                <p class="card-text">Gerencie os avisos e banners motivacionais</p>
-                                <a href="pgbanner.php" class="btn btn-primary">Acessar</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card text-center">
-                            <div class="card-body">
-                                <h5 class="card-title">Grupos Musculares</h5>
-                                <p class="card-text">Gerencie os grupos de exercícios</p>
-                                <a href="pggrupos.php" class="btn btn-primary">Acessar</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card text-center">
-                            <div class="card-body">
-                                <h5 class="card-title">Exercícios</h5>
-                                <p class="card-text">Gerencie os exercícios disponíveis</p>
-                                <a href="pgeexercicios.php" class="btn btn-primary">Acessar</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card text-center">
-                            <div class="card-body">
-                                <h5 class="card-title">Informações</h5>
-                                <p class="card-text">Dados da academia</p>
-                                <a href="pginstitucional.php" class="btn btn-primary">Acessar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="container py-5">
+
+        <div class="admin-page-header">
+            <h1><i class="bi bi-shield-lock-fill me-2" style="color:var(--orange)"></i>Painel Administrativo</h1>
+            <p>Gerencie o conteúdo da Academia Corpo em Foco</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <a href="pgbanner.php" class="admin-dashboard-card">
+                    <div class="dash-icon"><i class="bi bi-megaphone-fill"></i></div>
+                    <h5>Avisos / Banners</h5>
+                    <p>Gerencie os avisos e banners motivacionais</p>
+                    <span class="dash-btn">Acessar <i class="bi bi-arrow-right"></i></span>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <a href="pggrupos.php" class="admin-dashboard-card">
+                    <div class="dash-icon"><i class="bi bi-grid-fill"></i></div>
+                    <h5>Grupos Musculares</h5>
+                    <p>Gerencie os grupos de exercícios</p>
+                    <span class="dash-btn">Acessar <i class="bi bi-arrow-right"></i></span>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <a href="pgeexercicios.php" class="admin-dashboard-card">
+                    <div class="dash-icon"><i class="bi bi-activity"></i></div>
+                    <h5>Exercícios</h5>
+                    <p>Gerencie os exercícios disponíveis</p>
+                    <span class="dash-btn">Acessar <i class="bi bi-arrow-right"></i></span>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <a href="pginstitucional.php" class="admin-dashboard-card">
+                    <div class="dash-icon"><i class="bi bi-info-circle-fill"></i></div>
+                    <h5>Informações</h5>
+                    <p>Dados institucionais da academia</p>
+                    <span class="dash-btn">Acessar <i class="bi bi-arrow-right"></i></span>
+                </a>
             </div>
         </div>
     </div>
